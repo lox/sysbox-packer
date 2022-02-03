@@ -46,8 +46,9 @@ modinfo shiftfs || true
 modprobe shiftfs || true
 
 # Install sysbox
-curl -Lfs -q https://downloads.nestybox.com/sysbox/releases/v0.4.1/sysbox-ee_0.4.1-0.ubuntu-focal_amd64.deb \
-    -o sysbox.deb
+# curl -Lfs -q https://downloads.nestybox.com/sysbox/releases/v0.4.1/sysbox-ee_0.4.1-0.ubuntu-focal_amd64.deb \
+#     -o sysbox.deb
+cp /tmp/conf/sysbox-ee_0.5.0-dev-block-0.ubuntu-focal_amd64.deb ./sysbox.deb
 apt-get install -y ./sysbox.deb
 
 # Install docker daemon config
