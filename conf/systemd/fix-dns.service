@@ -1,0 +1,9 @@
+[Unit]
+Description=Fix missing resolv.conf
+After=systemd-resolved.service
+
+[Service]
+ExecStart=/usr/bin/ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+[Install]
+WantedBy=multi-user.target

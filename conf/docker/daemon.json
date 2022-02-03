@@ -1,0 +1,17 @@
+{
+  "bip": "172.18.1.1/24",
+  "fixed-cidr": "172.18.0.0/15",
+  "icc": false,
+  "default-address-pools": [
+    {
+      "base": "172.19.0.0/16",
+      "size": 29
+    }
+  ],
+  "runtimes": {
+      "sysbox-runc": {
+          "path": "/usr/bin/sysbox-runc"
+      }
+  },
+  "default-runtime": "sysbox-runc"
+}
