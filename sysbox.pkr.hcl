@@ -69,6 +69,7 @@ build {
       "DEBIAN_FRONTEND=noninteractive",
     ]
     scripts = [
+      "provisioners/install-utils.sh",
       "provisioners/install-dns-fix.sh",
       "provisioners/install-ssm-manager.sh",
       "provisioners/install-cloudwatch-agent.sh",
